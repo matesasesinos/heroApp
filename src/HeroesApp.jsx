@@ -16,7 +16,9 @@ export const HeroesApp = () => {
   }, [user]);
 
   return (
-    <AuthContext.Provider
+    <>
+    <h1>Hola</h1>
+     <AuthContext.Provider
       value={{
         user,
         dispatch,
@@ -24,5 +26,7 @@ export const HeroesApp = () => {
     >
       <AppRouter />
     </AuthContext.Provider>
+    </>
+   
   );
 };
